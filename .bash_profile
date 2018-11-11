@@ -15,4 +15,6 @@ export JAVA_HOME="$(/usr/libexec/java_home)"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-ANDROID_HOME = /Users/wseobseo/Library/Android/sdk
+export ANDROID_HOME=/Users/wseobseo/Library/Android/sdk
+
+export PATH="/Users/wseobseo/Library/Python/3.7/bin:$PATH"
