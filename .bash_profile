@@ -18,3 +18,7 @@ export LANG=en_US.UTF-8
 export ANDROID_HOME=/Users/wseobseo/Library/Android/sdk
 
 export PATH="/Users/wseobseo/Library/Python/3.7/bin:$PATH"
+
+export PATH=$PATH:$(go env GOPATH)/bin
+
+export GOPATH=$(go env GOPATH)
