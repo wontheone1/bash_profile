@@ -35,5 +35,4 @@ alias preview="fzf --preview 'bat --color \"always\" {}'"
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
 alias top="htop"
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
-
 alias help='tldr'
