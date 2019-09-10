@@ -25,14 +25,12 @@ export GOPATH=$(go env GOPATH)
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
 
-# brew install diff-so-fancy
-# brew install ack
-# brew install ag
-# brew install jq
-alias cat='bat'
 alias ping='prettyping --nolegend'
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
 alias top="htop"
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 alias help='tldr'
+alias zctl="zkubectl"
+
+source <(zkubectl completion bash)
