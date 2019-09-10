@@ -1,3 +1,3 @@
 # bash_profile
 
-Shell profiles OSX machine.
+Shell profiles for OSX machine.
