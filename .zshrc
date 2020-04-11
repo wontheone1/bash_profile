@@ -119,14 +119,19 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 export ANDROID_HOME=/Users/wseobseo/Library/Android/sdk
+export ANDROID_SDK_ROOT=/Users/wseobseo/Library/Android/sdk
+export ANDROID_AVD_HOME=/Users/wseobseo/.android/avd
+export AVD_NAME=Pixel_3a_API_R
 
+export PATH="$ANDROID_HOME:$ANDROID_SDK_ROOT:$ANDROID_AVD_HOME:$PATH"
 export PATH="/Users/wseobseo/Library/Python/3.7/bin:$PATH"
 
-export PATH=$PATH:$(go env GOPATH)/bin
+export PATH="$PATH:$(go env GOPATH)/bin"
 export GOPATH=$(go env GOPATH)
 
 export GOROOT=/usr/local/go
-export PATH=$PATH:$GOROOT/bin
+export PATH="$PATH:$GOROOT/bin"
+
 
 alias ping='prettyping --nolegend'
 alias preview="fzf --preview 'bat --color \"always\" {}'"
@@ -137,3 +142,8 @@ alias help='tldr'
 alias zctl="zkubectl"
 
 source <(zkubectl completion bash)
+
+export PATH="$PATH:/Users/wseobseo/development/flutter/bin"
+export PATH="$PATH:/Users/wseobseo/Library/Android/sdk/platform-tools"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
